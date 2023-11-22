@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+alias vim='nvim'
+alias dotfiles='cd $DOTFILES'
+alias resource='source ~/.zshrc'
+alias reload="exec $SHELL -l"
+# List all files colorized in long format, including dot files
+alias la="ls -laF ${colorflag}"
+
+# Get macOS Software Updates, and update Homebrew and it's packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup'
+alias brewup='brew update; brew upgrade; brew cleanup'
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+###################
+# GIT SHORTCUTS
+###################
+#git checkout master; git pull; git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done
+alias gs='git status -s'
+alias gd='clear; git diff'
+alias gdc='clear; git diff --cached'
+alias gb='git branch'
+alias gpn='git push -u origin'
+alias gcb='git checkout -b'
+alias gco='git checkout'
+alias gcon='git config --list'
+alias gl='clear; git log --since=4.weeks --pretty=format:"%h - %an, %ar : %s"'
+alias gp='git pull'
+alias comend='git add -A && git commit -av --amend --date=now' # add all, amend commit
+alias rebm='git fetch origin main:main; git rebase origin/main'
+alias rebms='git fetch origin master:master; git rebase origin/master'
+
+###################
+# NODENV SHORTCUTS
+###################
+alias nv='nodenv version'
+alias nvs='nodenv versions'
+alias nd='node --inspect-brk '
+alias tsd='TS_NODE_FILES=true node --inspect -r ts-node/register index.ts'
+
+###################
+# PYENV SHORTCUTS
+###################
+alias pv='pyenv version'
+alias pvs='pyenv versions'
+
+###################
+# RBENV SHORTCUTS
+###################
+alias rv='rbenv version'
+alias rvs='rbenv versions'
+
+###################
+# GO SHORTCUTS
+###################
+alias gmt='go mod tidy'
+alias gmv='go mod vendor'
+alias gobuild='go build -mod=vendor'
+alias gotest='go test ./... -v -race -mod=vendor'

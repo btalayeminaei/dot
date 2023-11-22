@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+addToPath $HOME/go/bin
+addToPath /opt/homebrew/opt/postgresql@12/bin

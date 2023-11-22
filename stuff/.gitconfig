@@ -1,0 +1,7 @@
+[user]
+	name = Beshad Talayeminaei
+	email = btalayeminaei@gmail.com
+[pull]
+	rebase = false
+[alias]
+	pushfwl = push --force-with-lease
