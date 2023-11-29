@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 alias vim='nvim'
 alias dotfiles='cd $DOTFILES'
+alias beshad='cd ~/beshad'
 alias resource='source ~/.zshrc'
 alias reload="exec $SHELL -l"
 # List all files colorized in long format, including dot files
