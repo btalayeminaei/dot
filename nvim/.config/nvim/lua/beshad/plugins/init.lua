@@ -1,5 +1,4 @@
 return {
-  { 'rose-pine/neovim', name = 'rose-pine' },
   'github/copilot.vim',
   -- LSP
   {'williamboman/mason.nvim'},
