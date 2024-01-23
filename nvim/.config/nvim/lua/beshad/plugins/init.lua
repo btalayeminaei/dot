@@ -1,11 +1,6 @@
 return {
   { 'rose-pine/neovim', name = 'rose-pine' },
   'github/copilot.vim',
-  -- treesitter
-  {
-    'nvim-telescope/telescope.nvim', tag = '0.1.5',
-    dependencies = { 'nvim-lua/plenary.nvim' }
-  },
   -- LSP
   {'williamboman/mason.nvim'},
   {'williamboman/mason-lspconfig.nvim'},
