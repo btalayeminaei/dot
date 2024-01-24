@@ -30,6 +30,7 @@ brew upgrade
 # brew install --cask google-chrome
 # brew install --cask rectangle
 # brew install --cask docker
+# brew install --cask gimp
 #
 # brew tap heroku/brew
 # brew install heroku
