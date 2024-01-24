@@ -1,6 +1,6 @@
 DISABLE_MAGIC_FUNCTIONS=true
 export ZSH=$HOME/.oh-my-zsh
-export DOTFILES=$HOME/.dotfiles
+export DOTFILES=$HOME/.dot
 export XDG_CONFIG_HOME=$HOME/.config
 
 ZSH_THEME="robbyrussell"
