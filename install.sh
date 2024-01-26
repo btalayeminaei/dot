@@ -8,6 +8,7 @@ brew upgrade
 # brew install git
 # brew install neovim
 # brew install ripgrep
+# brew install fd
 # brew install wget
 # brew install stow
 # brew install libpq
