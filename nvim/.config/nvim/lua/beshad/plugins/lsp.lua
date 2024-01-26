@@ -7,7 +7,7 @@ return {
   config = function()
     require("mason").setup()
     require("mason-lspconfig").setup({
-      ensure_installed = { "lua_ls", "tsserver" }
+      ensure_installed = { "lua_ls", "tsserver", "solargraph" }
     })
 
     -- After setting up mason-lspconfig you may set up servers via lspconfig
@@ -24,5 +24,6 @@ return {
       },
     }
     require('lspconfig').tsserver.setup {}
+    require('lspconfig').solargraph.setup {}
   end
 }
