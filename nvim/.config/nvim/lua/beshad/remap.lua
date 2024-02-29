@@ -1,5 +1,3 @@
-vim.g.mapleader = " "
-
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("n", "<leader>h", ":wincmd h<CR>")
@@ -16,9 +14,6 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('UserLspConfig', {}),
   callback = function(e)
-    -- Enable completion triggered by <c-x><c-o>
-    --vim.bo[e.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
-
     -- Buffer local mappings.
     -- See `:help vim.lsp.*` for documentation on any of the below functions
     local opts = { buffer = e.buf }
@@ -31,5 +26,14 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', '<space>f', function()
       vim.lsp.buf.format { async = true }
     end, opts)
+  end,
+})
+
+-- remove trailing whitespace on save
+vim.api.nvim_create_autocmd('BufWritePre', {
+  callback = function()
+    local save_cursor = vim.fn.getpos(".")
+    vim.cmd([[%s/\s\+$//e]])
+    vim.fn.setpos(".", save_cursor)
   end,
 })
