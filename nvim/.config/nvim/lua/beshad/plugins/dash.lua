@@ -1,0 +1,3 @@
+return {
+  'rizzatti/dash.vim'
+}
