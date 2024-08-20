@@ -12,6 +12,7 @@ brew upgrade
 # brew install wget
 # brew install stow
 # brew install libpq
+# brew install tmux
 #
 # brew install rbenv
 # eval "$(rbenv init - zsh)"
