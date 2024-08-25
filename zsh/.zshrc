@@ -2,6 +2,7 @@ DISABLE_MAGIC_FUNCTIONS=true
 export ZSH=$HOME/.oh-my-zsh
 export DOTFILES=$HOME/.dot
 export XDG_CONFIG_HOME=$HOME/.config
+export EDITOR=nvim
 
 ZSH_THEME="robbyrussell"
 
