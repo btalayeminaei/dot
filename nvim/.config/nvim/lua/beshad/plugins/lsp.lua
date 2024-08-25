@@ -7,7 +7,10 @@ return {
   config = function()
     require("mason").setup()
     require("mason-lspconfig").setup({
-      ensure_installed = { "lua_ls", "tsserver", "solargraph" }
+      ensure_installed = {
+        "lua_ls",
+        "rubocop",
+      }
     })
 
     -- After setting up mason-lspconfig you may set up servers via lspconfig
@@ -23,7 +26,9 @@ return {
         },
       },
     }
-    require('lspconfig').tsserver.setup {}
-    require('lspconfig').solargraph.setup {}
+
+    require('lspconfig').rubocop.setup {
+      cmd = { "bundle", "exec", "rubocop", "--lsp" },
+    }
   end
 }
