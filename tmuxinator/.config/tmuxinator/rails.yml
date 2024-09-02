@@ -1,0 +1,11 @@
+# /Users/beshadtalayeminaei/.config/tmuxinator/rails.yml
+
+name: rails
+root: <%= @settings["workspace"] %>
+windows:
+  - editor: vim
+  - console: bundle exec rails console
+  - dbconsole: bundle exec rails dbconsole
+  - server: bundle exec rails s
+  - logs: tail -f log/development.log
+  - dotfiles: dotfiles

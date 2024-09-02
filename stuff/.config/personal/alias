@@ -60,3 +60,10 @@ alias gmt='go mod tidy'
 alias gmv='go mod vendor'
 alias gobuild='go build -mod=vendor'
 alias gotest='go test ./... -v -race -mod=vendor'
+
+
+###################
+# TMUX SHORTCUTS
+###################
+alias mux='tmuxinator'
+alias muxyalda='mux start rails workspace=~/beshad/projects/yalda -n yalda'
