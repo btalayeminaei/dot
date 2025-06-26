@@ -3,5 +3,15 @@
 	email = btalayeminaei@gmail.com
 [pull]
 	rebase = false
+[column]
+	ui = auto
+[branch]
+  sort = -committerdate
+[push]
+  default = simple
+  autoSetupRemote = true
+[fetch]
+  prune = true
+  all = true
 [alias]
 	pushfwl = push --force-with-lease
