@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 alias vim='nvim'
 alias dotfiles='cd $DOTFILES'
-alias vimfiles='cd $DOTFILES/nvim/.config/nvim/lua/beshad'
+alias vimfiles='cd $DOTFILES/home/.config/nvim/lua/beshad'
 alias beshad='cd ~/beshad'
 alias resource='source ~/.zshrc'
 alias reload="exec $SHELL -l"
