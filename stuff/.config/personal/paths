@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 addToPath $HOME/go/bin
+addToPath /opt/homebrew/opt/postgresql@15/bin
 addToPath /opt/homebrew/opt/libpq/bin
