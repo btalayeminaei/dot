@@ -30,3 +30,5 @@ eval "$(nodenv init -)"
 eval "$(pyenv init -)"
 # direnv
 eval "$(direnv hook zsh)"
+# fzf
+source <(fzf --zsh)
